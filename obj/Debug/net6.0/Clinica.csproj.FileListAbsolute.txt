@@ -1,0 +1,17 @@
+C:\Users\rkzer\DEV\Clinica\bin\Debug\net6.0\Clinica.exe
+C:\Users\rkzer\DEV\Clinica\bin\Debug\net6.0\Clinica.deps.json
+C:\Users\rkzer\DEV\Clinica\bin\Debug\net6.0\Clinica.runtimeconfig.json
+C:\Users\rkzer\DEV\Clinica\bin\Debug\net6.0\Clinica.dll
+C:\Users\rkzer\DEV\Clinica\bin\Debug\net6.0\Clinica.pdb
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.csproj.AssemblyReference.cache
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.AssemblyInfoInputs.cache
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.AssemblyInfo.cs
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.dll
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\refint\Clinica.dll
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.pdb
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.genruntimeconfig.cache
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\ref\Clinica.dll
+C:\Users\rkzer\DEV\Clinica\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rkzer\DEV\Clinica\obj\Debug\net6.0\Clinica.csproj.CopyComplete

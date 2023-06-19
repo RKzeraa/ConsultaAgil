@@ -1,0 +1,24 @@
+[
+  {
+    "Id": 3,
+    "Paciente": {
+      "Id": 2,
+      "Nome": "Karllos",
+      "Telefone": "55998991734"
+    },
+    "Dia": "2023-07-20T00:00:00",
+    "Hora": "2023-06-19T11:30:00",
+    "Especialidade": "Teste"
+  },
+  {
+    "Id": 2,
+    "Paciente": {
+      "Id": 4,
+      "Nome": "Ramom",
+      "Telefone": "45998991734"
+    },
+    "Dia": "2023-07-19T00:00:00",
+    "Hora": "2023-06-19T10:30:00",
+    "Especialidade": "Olhar Teste"
+  }
+]
