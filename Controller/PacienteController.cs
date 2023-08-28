@@ -1,13 +1,19 @@
+using System.Data;
 using System.Text.RegularExpressions;
+using Clinica.Interface;
+using Clinica.Model;
+
+namespace Clinica.Controller;
+
 internal class PacienteController : IPacienteController
 {
-    // internal static List<Paciente> Pacientes = new();
     private static readonly List<Paciente> PacientesJson = Paciente.JsonDesserializarLista("pacientes.json");
 
     public void CadastrarPaciente()
     {
         string telefone;
         string nome;
+
         do
         {
             Console.WriteLine("Digite o nome do paciente: ");
@@ -18,9 +24,12 @@ internal class PacienteController : IPacienteController
                 telefone = Console.ReadLine()!;
             }
             while (ValidarTelefone(telefone) == false);
-        } while (PacienteJaExiste(telefone) != false);
+        } while (PacienteJaExiste(telefone));
+
+
         Paciente paciente = new(nome, telefone);
         PacientesJson.Add(paciente);
+
         if (paciente.JsonSerializarLista(PacientesJson, "pacientes.json"))
         {
             Console.WriteLine("\nPaciente cadastrado com sucesso!");
@@ -51,31 +60,19 @@ internal class PacienteController : IPacienteController
         return true;
     }
 
-    public static Paciente? ListarPaciente(int Id)
+    public static Paciente? ListarPaciente(int id)
     {
-        foreach (Paciente paciente in PacientesJson)
-        {
-            if (paciente.Id == Id)
-            {
-                return paciente;
-            }
-        }
-        return null;
+        return PacientesJson.FirstOrDefault(paciente => paciente.Id == id);
     }
 
     private static bool PacienteJaExiste(string telefone)
     {
-        foreach (Paciente paciente in PacientesJson)
-        {
-            if (paciente.Telefone == telefone)
-            {
-                Console.WriteLine("Paciente já cadastrado! \nPressione qualquer tecla para continuar...");
-                Console.ReadKey();
-                Console.Clear();
-                return true;
-            }
-        }
-        return false;
+        if (!PacientesJson.Any(paciente => paciente.Telefone == telefone)) return false;
+        Console.WriteLine("Paciente já cadastrado! \nPressione qualquer tecla para continuar...");
+        Console.ReadKey();
+        Console.Clear();
+        return true;
+
     }
 
     private static bool ValidarTelefone(string telefone)

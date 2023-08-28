@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Su0FJezQIqKqMkVcPxMJse0SG1A7lm2SgAA83R3+6JWRqcU1JVBB5DA6FrxSQDCbRwF9EcpTa1i6YtZh4aqf2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rkzer\\DEV\\QS\\PROject\\ConsultaAgil\\Clinica.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rkzer\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,9 +1,11 @@
-﻿using System.Data;
-using Clinica.Controller;
+﻿using Clinica.Controller;
+using Clinica.Interface;
 
-class Program
+namespace Clinica;
+
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         IPacienteController paciente = new PacienteController();
         IConsultaController consulta = new ConsultaController();
